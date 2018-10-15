@@ -1,0 +1,33 @@
+﻿dist
+node_modules
+yarn.lock
+npm-debug.log
+
+# ide
+.idea
+
+# Mac General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# umi
+.umi
+.umi-production
+.umirc.mock.js
+
+# 全局layouts
+/src/layouts
+
+# 全局Global组件
+/src/components/Global
+
+# 全局utils
+/src/utils
+
+# demo项目内容
+/src/pages/demo
+/src/pages/UIElement
+
+# 业务代码
+# /src/pages

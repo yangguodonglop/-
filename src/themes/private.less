@@ -1,0 +1,182 @@
+@import "~themes/default"; // antd-default
+@page-bgc: #f7f8f9;
+@main-color: #2294f5;
+@darkbg-text-color: #fff;
+@Weaken-text-color: #555;
+@a-font-size: 14px;
+@b-font-size: 16px;
+@c-font-size: 18px;
+@big-font-size: 26px;
+
+@green: #64ea91;
+@red: #f69899;
+@dark-half: #494949;
+@purple: #d897eb;
+@yellow: #f8c82e;
+@peach: #f797d6;
+@grass: #d6fbb5;
+@sky: #c1e0fc;
+@borderBase: #e5e5e5;
+@borderSplit: #f4f4f4;
+@shadow-1: 4px 4px 20px 0 rgba(0,0,0,0.01);
+@shadow-2: 4px 4px 40px 0 rgba(0,0,0,0.05);
+@transition-ease-in: all 0.3s ease-out;
+@transition-ease-out: all 0.3s ease-out;
+@ease-in: ease-in;
+
+// 灰色按钮
+.gray_btn{
+  background-color: #eee;
+  color: #666;
+}
+
+// 单行文本溢出
+.text_overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 多行文本溢出(默认两行)
+.mult_text_overflow {
+  /* autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+}
+
+// 可点小手 
+.pointer {
+  cursor: pointer;
+  color: @main-color;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// 标题栏
+.title_bar {
+  height: 54px;
+  padding: 10px 0;
+}
+
+// 标题竖线
+.title_line { 
+  font-size:@a-font-size;
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  background: #fff;
+  padding-left: 16px;
+  font-weight: bold;
+  &:before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 16px;
+    background-color: @main-color;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+  }
+  // 左边标题
+  .title{
+    flex: 1;
+  }
+  // 右边按钮
+  .btns {
+    display: flex;
+    align-items: center;
+  }
+}
+
+// 页面包裹
+.page_wrap{
+  background-color: #fff;
+  min-height: 100%;
+  padding: 0 16px;
+}
+
+// 灰色Alert（一般提示）
+.general_tips{
+  border-color: #cbcbcb;
+  background-color: #f4f5f7;
+}
+
+// 定位到面包屑右侧
+.in_breadcrumb_right{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+}
+
+//启用状态图标
+.enable_icon{
+  color: @green;
+  &::before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #00cc33;
+    margin-right: 5px;
+    box-shadow: 0 0 10px #00cc33;
+  }
+}
+
+//停用状态图标
+.disable_icon{
+  color: @red;
+  &::before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #f94a4a;
+    margin-right: 5px;
+    box-shadow: 0 0 10px #f94a4a;
+  }
+}
+
+//上下左右 小图标
+.arrow_icon {
+  position: relative;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  text-align: center;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    background: transparent;
+    border-top: 6px solid #999;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid transparent;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+  }
+  &.top{
+    transform: rotate(-180deg) translate(-5px, 0);
+  }
+  &.right{
+    transform: rotate(-90deg) translate(-8px, 3px);
+  }
+  &.bottom{
+    transform: rotate(0deg) translate(-5px, 5px);
+  }
+  &.left{
+    transform: rotate(90deg) translate(-5px, 0);
+  }
+}
