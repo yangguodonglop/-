@@ -1,0 +1,88 @@
+.createFormStyle {
+    :global {
+      //温馨提示框样式
+      .ant-alert-info {
+        border: 1px solid #7cc3fe;
+        background-color: #e4f3ff;
+      }
+      .ant-alert.ant-alert-no-icon {
+        padding: 6px 15px;
+      }
+      .ant-alert-description {
+        font-size: 12px;
+        line-height: 22px;
+        margin: -5px;
+      }
+      .ant-alert-close-icon {
+        font-size: 16px;
+        position: absolute;
+        right: 16px;
+        top: 6px;
+        line-height: 22px;
+        overflow: hidden;
+        cursor: pointer;
+        color: #888888
+      }
+  
+      //表单样式
+      .ant-form-item {
+        margin-bottom: 9px;
+      }
+      .ant-form-item-label {
+        width: 100px;
+        color: #555555;
+      }
+      //下拉选择背景
+      .ant-select-selection {
+        background-color: #ffffff;
+      }
+  
+      //文本域右下角图标
+      form textarea.ant-input{
+          resize: none;
+      }
+  
+      .ant-input-group-addon {
+          background-color: #eeeeee;
+      }
+  
+      .ant-form-item-required:before {
+        color: #F94A4A;
+    }
+  
+      //下来选择三角符号
+      .ant-select-arrow:before {
+          content: '';
+          width: 0px;
+          height: 0px;
+          background: transparent;
+          border-top: 6px solid #666;
+          border-right: 4px solid transparent;
+          border-left: 4px solid transparent;
+          margin: 4px;
+      }
+    }
+  }
+  
+  //提示信息样式
+  .helpInfoStyle{
+      position: absolute;
+      line-height: 20px;
+      width: 400px;
+      margin-left: 10px;
+      color: #888888;
+  }
+  
+  .helpInfoStyleLess{
+    position: absolute;
+    line-height: auto;
+    width: 400px;
+    margin-left: 10px;
+    color: #888888;
+  }
+  
+  .textNumStyle{
+      bottom: -10px;
+      margin-left: -40px;
+      position:absolute;
+  }

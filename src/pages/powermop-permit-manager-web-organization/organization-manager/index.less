@@ -1,0 +1,228 @@
+@import "~themes/vars.less";
+
+//列表页面控制
+.page_wrap{
+  background-color: #fff;
+  height: 100%;
+  padding: 0 16px;
+  .title_line{
+    display: flex;
+    border-bottom: 1px solid @borderBase;
+    .title{
+      flex: 1;
+    }
+  }
+
+  :global .ant-pagination {
+    padding: 6px 6px 6px 0
+  }
+
+
+
+  .filterWrap {
+    margin: 10px 0
+  }
+  
+  .form_section{
+    display: flex;
+    padding: 10px 0;
+    .left{
+      flex: 1;
+    }
+    .right{
+      font-size: @b-font-size;
+    }
+  }
+}
+
+//新建页面控制
+.page_create {
+  background-color: #fff;
+  height: 100%;
+  padding: 10px 16px;
+
+  :gloabl .ant-alert-with-description.ant-alert-no-icon {
+    padding: 0px
+  }
+
+  :global .ant-alert-with-description .ant-alert-close-icon {
+    top: 12px;
+  }
+
+  :gloabl .ant-alert.ant-alert-no-icon {
+    padding: 8px 18px;
+  }
+  
+  :global .ant-pagination {
+    padding: 6px 6px 6px 0
+  }
+  
+  :global {
+    form textarea.ant-input{
+      resize: none;
+    }
+
+    .ant-form-item{
+      margin-bottom: 12px;
+      color: #555;
+    }
+    
+    .ant-form-item-label{
+      width: 100px;
+      color: #555555;
+    }
+
+    .ant-form-item-control{
+      width: 400px;
+    }
+    
+    .ant-btn{
+      margin-left: 0px
+    }
+  }
+
+  .help{
+    position: absolute;
+    display: inline-block;
+    width: 400px;
+    margin-left: 10px;
+    color: #888888;
+  }
+
+  .btn{
+    margin-left: 10px;
+    background-color: #eeeeee;
+  }
+
+  .one{
+    position:relative;
+    width: 500px;
+  }
+
+  .two{
+    bottom: -10px;
+    right: 5px;
+    position:absolute;
+  }
+
+  //提示信息样式
+  .helpInfoStyle{
+    position: absolute;
+    line-height: auto;
+    width: 600px;
+    margin-left: 10px;
+    color: #888888;
+  }
+}
+
+.redMessage {
+  color: #F94A4A
+}
+
+.greenMessage {
+  color: #019905
+}
+
+.details{
+  color: #333333;
+  margin-left: 10px;
+}
+
+.label{
+  margin-bottom: 10px;
+  text-align: right;
+  width: 80px;
+  color: #555555;
+}
+
+.submitPosition{
+  margin-left: 100px;
+  min-width: 70px;
+}
+
+.dividerType {
+  height: 14px;
+  width: 2px;
+  margin-bottom: 2px;
+  padding-left: 0;
+  margin-left: 0;
+  background-color: #2294f5; 
+  align-content: center;
+}
+
+.subTitle {
+  font-size: 14px; 
+  align-content: center; 
+  color: #555555;
+}
+
+.errorText {
+  margin-left: 10px;
+  color: #FF0000;
+  font-weight: bolder;
+}
+
+.wranText {
+  margin-left: 10px;
+  color: #FFCC33;
+  font-weight: bolder;
+}
+
+.successText {
+  margin-left: 10px;
+  color: #019905;
+  font-weight: bolder;
+}
+
+.divContent {
+  margin: 10px;
+  height: 250px;
+  border: 1px dotted #dddddd;
+  background-color: #F3F5F8;
+}
+
+.deleteBtn {
+  background-color: #eeeeee
+}
+
+//部门，部门负责人展示样式
+.department_con{
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 12px;
+  overflow: hidden;
+ 
+  .department_l{
+    float: left;
+    &:nth-child(2){
+      margin-left: 40px;
+    }
+    span{
+      float: left;
+   
+    }
+  }
+}
+.form_section_con{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  overflow: hidden;
+}
+.form_section_l{
+  width: 250px;
+  overflow: hidden;
+  margin-top: 10px;
+
+}
+.form_section_r{
+  width: 100%;
+  height: auto;
+  margin-left: 20px;
+  
+}
+.form_section_alert{
+width: 178px;
+margin-top: 10px;
+padding: 6px 15px 6px 37px;
+}

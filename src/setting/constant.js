@@ -1,3 +1,6 @@
+import permitConfig from '../pages/powermop-permit-manager-web-organization/constant'
+
+
 export default {
   // 请求报文head配置
   head: {
@@ -6,5 +9,6 @@ export default {
   },
   // 内页路由
   routes: [
+    ...(permitConfig.routes),   //我的应用
   ],
 }
